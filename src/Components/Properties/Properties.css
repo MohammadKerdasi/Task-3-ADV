@@ -1,0 +1,101 @@
+.Mk-SixthTitle
+{
+    display: flex;
+    justify-content: center;
+    padding: 60px 10%;
+}
+.Mk-sixthTitleEdit 
+{
+    position: relative;
+    text-align: center;
+}
+.Mk-sixthTitleEdit p
+{
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+}
+.Mk-sixthTitleEdit p::before
+{
+    left: 2px;
+}
+.Mk-Cards
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10% 50px;
+}
+.Mk-SingleCard
+{
+    background-color: rgb(236, 234, 234);
+    width: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+.Mk-PriceWithName
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.Mk-proName
+{
+    width: 100px;
+    font-size: 15px;
+    background-color: #fad7d4;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.Mk-Price b 
+{
+    color: #f34446;
+}
+.Mk-roomsInfo
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+.Mk-roomsInfo p 
+{
+    font-size: 18px;
+    margin: 0px 10px;
+}
+.Mk-VisitBtn
+{
+    width: 70%;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Mk-btnDiv
+{
+
+    border-top: solid 1px lightgray;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:920px)
+{
+    .Mk-Cards
+    {
+        flex-direction: column;
+    }
+}

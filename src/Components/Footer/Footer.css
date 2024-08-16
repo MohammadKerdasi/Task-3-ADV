@@ -1,0 +1,21 @@
+.Mk-CopyRight
+{
+    background-color: black;
+    bottom: 0px;
+    margin-top: 500px;   
+    width: 100%;
+    padding: 10px 10%;
+}
+.Mk-CopyRight p 
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+@media (max-width:1044px){
+    .Mk-CopyRight
+    {
+        margin-top: 1000px;
+    }
+}

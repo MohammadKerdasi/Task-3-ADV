@@ -1,0 +1,84 @@
+.Mk-Head
+{
+    position: static;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color:white;
+    border-bottom: solid 1px rgb(236, 235, 235);
+    flex-wrap: wrap;
+}
+.Mk-Info
+{
+    width: 400px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Mk-Info span 
+{
+    color: #8c868b;
+    
+}
+.Mk-envolopeIcon
+{
+    margin-right:8px ;
+}
+.Mk-ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+.Mk-ul li 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(218, 216, 216);
+    border-radius: 50%;
+    list-style: none ;
+    text-decoration: none;
+}
+.Mk-Info .Mk-borderRight::after 
+{
+    content: " ";
+    position: absolute;
+    margin-left: 30px;
+    width: 1px;
+    height: 25px;
+    background-color: #f1e9f0;
+}
+
+@media (min-width:525px) and (max-width:800px){
+    .Mk-Head
+    {
+        flex-direction: column;
+    }
+    .Mk-ul
+    {
+        margin-top: 20px;
+    }
+}
+@media  (max-width:525px)
+{
+    .Mk-Head
+    {
+        flex-direction: column;
+    }
+    .Mk-ul
+    {
+        margin-top: 20px;
+    }
+    .Mk-Info
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+}

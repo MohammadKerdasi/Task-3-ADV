@@ -1,0 +1,128 @@
+.Mk-appartmentSection
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 90px 10%;
+    flex-wrap: wrap;
+}
+.Mk-FeaturedIcon
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f44336;
+    bottom: -50px;
+    left: -50px;
+}
+.Mk-firstFeatured
+{
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 450px;
+    background: url(./../../../public/images/featured.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 70px;
+
+}
+.Mk-appartmentTitle
+{
+    position: relative;
+    width: 500px;
+    margin: 0px 20px 0px 20px;
+}
+.Mk-250
+{
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.Mk-flatSpace
+{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(224, 224, 224);
+    padding: 35px 0;
+    flex-wrap: wrap;
+
+}
+.Mk-flatSpace:last-child
+{
+    border-bottom: 0px;
+    padding: 35px 0px 20px 0px;
+}
+.Mk-250boldAndP b
+{
+    font-size: 25px;
+}
+.Mk-250boldAndP p 
+{
+    color: rgb(179, 179, 179);
+}
+.Mk-flexDirectioncolumn
+{
+    display: flex;
+    flex-direction: column;
+}
+.Mk-flexDirectioncolumn p 
+{
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(179, 179, 179);
+}
+@media (min-width:700px) and (max-width:1150px){
+    .Mk-appartmentSection
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Mk-appartmentTitle
+    {
+        width: 400px;
+    }
+}
+@media (min-width:300px) and (max-width:700px)
+{
+    .Mk-appartmentSection
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Mk-appartmentTitle
+    {
+        width: 250px;
+    }
+    .Mk-firstFeatured
+    {
+        width: 220px;
+    }
+    .Mk-FeaturedIcon
+    {
+        left: -10px;
+    }
+    .Mk-250
+    {
+        width: 260px;
+    }
+}

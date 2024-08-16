@@ -1,0 +1,126 @@
+.MK-iframeSection {
+    position: relative;
+    background: url(./../../../public/images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 90px 10%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .MK-titleContainer {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .MK-iframeAndForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 87%;
+    position: absolute;
+    bottom: -300px;
+  }
+  
+  .MK-iFrame {
+    width: 40%;
+    height: 450px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  .MK-form {
+    width: 40%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .MK-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .MK-form input,
+  .MK-form textarea {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    width: 95%;
+    background: rgb(240, 239, 239);
+  }
+  
+  .MK-form button {
+    margin: 10px 0px 10px 20px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 200px;
+  }
+  .Mk-LabelForm
+  {
+    padding: 20px;
+  }
+  .Mk-2Cards
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Mk-Phone
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    border-radius: 8px;
+  }
+ .Mk-Phone p
+ {
+    color: rgb(194, 194, 194);
+ }
+  
+  @media (max-width: 1044px) {
+.MK-iframeAndForm
+{
+  flex-direction: column-reverse;
+  bottom: -700px;
+
+}
+.MK-form
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.MK-iFrame
+{
+  width: 100%;
+}
+.Mk-2Cards
+{
+  flex-direction: column;
+}
+.Mk-Phone{
+  width: 100%;
+}
+  }
+  

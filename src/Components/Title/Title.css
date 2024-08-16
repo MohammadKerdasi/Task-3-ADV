@@ -1,0 +1,29 @@
+.Title{
+    text-align: left;
+    color: #f44336;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+}
+.Title p::before
+{
+    position: absolute;
+    content: " ";
+    width: 3px;
+    height: 17px;
+    left: 0;
+    background-color: #f44336;
+}
+.Title p 
+{
+    padding-left: 7px;
+}
+.Title h2 
+{
+    width: 300px;
+    font-size: 40px;
+    color: black;
+    margin-top: 5px;
+    text-transform: none;
+}

@@ -1,0 +1,50 @@
+.Mk-fourthSec
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 390px;
+    padding: 0px 10% 90px 10%;
+    flex-wrap: wrap;
+
+}
+.Mk-threeItems
+{
+    position: relative;
+    background-color: #ffe1df;
+    width: 300px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: #ff5f54;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+.Mk-threeItems::before
+{
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #f44336;
+    right: -30px;
+    bottom: 60px;
+    border-radius: 50%;
+}
+.Mk-threeItems b 
+{
+    font-size: 40px;
+    color: #f44336;
+}
+.Mk-threeItems p 
+{
+    width: 130px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+
+}

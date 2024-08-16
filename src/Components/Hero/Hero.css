@@ -1,0 +1,131 @@
+.MK-hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .MK-background {
+    background: url(./../../../public/images/banner-01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .MK-carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .MK-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .MK-slide {
+    padding: 0 10%;
+    min-width: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+  }
+  .MK-slide h1 
+  {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 800;
+    width: 15%;
+  }
+  
+  .MK-location {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .MK-prev, .MK-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .MK-prev {
+    left: 10px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .MK-next {
+    right: 10px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .MK-prev:hover, .MK-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .MK-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .MK-dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .MK-dot-active {
+    background-color: #f44336
+  }
+  
+  .MK-dot:hover {
+    background-color: #f44336;
+  }
+  .Mk-cityColor
+  {
+    color: #f44336;
+  }
+  
+
+  @media (max-width:850px)
+  {
+    .MK-slide
+    {
+      padding: 0 40% ;
+    }
+    .MK-slide h1 
+    {
+      font-size: 40px;
+    }
+  }

@@ -1,0 +1,36 @@
+.TitleWhite{
+    position: relative;
+    text-align: center;
+    color: #f44336;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px auto;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.TitleWhite p::before
+{
+    position: absolute;
+    content: " ";
+    width: 3px;
+    height: 17px;
+    left: 0;
+    background-color: #f44336;
+}
+.TitleWhite p 
+{
+    padding-left: 7px;
+}
+.TitleWhite h2 
+{
+    width: 300px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-transform: none;
+    margin-bottom: 95px;
+}
