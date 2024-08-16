@@ -99,3 +99,10 @@
         flex-direction: column;
     }
 }
+@media (max-width:450px){
+    .Mk-SingleCard
+    {
+        width: 250px;
+    }
+
+}

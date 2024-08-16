@@ -27,3 +27,11 @@
     margin-top: 5px;
     text-transform: none;
 }
+
+@media (max-width:500px){
+    .Title h2 {
+        width: 100%;
+        font-size: 25px;
+
+    }
+}

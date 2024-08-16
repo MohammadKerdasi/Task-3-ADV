@@ -48,3 +48,11 @@
     font-weight: 700;
 
 }
+@media  (max-width:500px){
+    .Mk-threeItems 
+    {
+        width: 220px;
+        padding: 10px;
+    }
+    
+}
