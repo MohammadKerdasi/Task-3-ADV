@@ -4,7 +4,7 @@
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
 }
 .Title p::before
 {
@@ -17,12 +17,13 @@
 }
 .Title p 
 {
+    position: relative;
     padding-left: 7px;
 }
 .Title h2 
 {
-    width: 300px;
-    font-size: 40px;
+    width: 350px;
+    font-size: 45px;
     color: black;
     margin-top: 5px;
     text-transform: none;

@@ -34,7 +34,11 @@
     transition: 0.2s ease;
     margin-top: 20px;
 }
-.Mk-FifthBtns:hover
+.Mk-FifthBtns:hover 
+{
+    background-color: #f33446;
+}
+.Mk-FifthBtns:focus
 {
     background-color: #f33446;
 }
@@ -71,6 +75,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap:wrap ;
+    transition:  0.5s ease-in-out;
 }
 .Mk-ExtraInfo
 {
@@ -95,29 +100,34 @@
     .Mk-Property
     {
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 }
-@media (min-width:300px) and (max-width:840px){
+@media (min-width:300px) and (max-width:992px){
     .Mk-250
     {
         margin-bottom: 30px;
+        width: 100%;
     }
     .Mk-Property
     {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .Mk-DealImg img
     {
-        width: 240px;
-        margin: 20px 0px !important
+        margin: 20px 0px !important;
+        width: 100%;
     }
     .Mk-BestDeal
     {
         align-items: center;
         justify-content: center;
+    }
+    .Mk-ExtraInfo{
+        width: 100%;
     }
 
 }

@@ -1,164 +1,109 @@
-import './Properties.css'
-import Title from './../Title/Title'
-import Property1 from './../../../public/images/property-01.jpg'
-import Property2 from './../../../public/images/property-02.jpg'
-import Property3 from './../../../public/images/property-03.jpg'
-import Property4 from './../../../public/images/property-04.jpg'
-import Property5 from './../../../public/images/property-05.jpg'
-import Property6 from './../../../public/images/property-06.jpg'
+import "./Properties.css";
+import PropertyCard from "../PropertyCard/PropertyCard";
+import Title from "./../Title/Title";
+ import Property1 from "./../../../public/images/property-01.jpg";
+ import Property2 from "./../../../public/images/property-02.jpg";
+ import Property3 from "./../../../public/images/property-03.jpg";
+ import Property4 from "./../../../public/images/property-04.jpg";
+ import Property5 from "./../../../public/images/property-05.jpg";
+ import Property6 from "./../../../public/images/property-06.jpg";
 
-const Properties = () => {
+const propertiesArray = [
+  {
+    image: Property1,
+    name: "Luxury Villa",
+    price: "$2.264.000",
+    address: "18 New Street Miami, OR 97219",
+    bedrooms: 8,
+    bathrooms: 8,
+    area: "545m2",
+    floor: 8,
+    parking: 8,
+    type: "villa"
+  },
+  {
+    image: Property2,
+    name: "Luxury Villa",
+    price: "$1.180.000",
+    address: "18 New Street Miami, OR 97219",
+    bedrooms: 8,
+    bathrooms: 8,
+    area: "545m2",
+    floor: 8,
+    parking: 8,
+    type: "villa"
+  },
+  {
+    image: Property3,
+    name: "Luxury Villa",
+    price: "$1.460.000",
+    address: "18 New Street Miami, OR 97219",
+    bedrooms: 8,
+    bathrooms: 8,
+    area: "545m2",
+    floor: 8,
+    parking: 8,
+    type: "villa"
+  },
+  {
+    image: Property4,
+    name: "Apartment",
+    price: "$584.500",
+    address: "18 New Street Miami, OR 97219",
+    bedrooms: 8,
+    bathrooms: 8,
+    area: "545m2",
+    floor: 8,
+    parking: 8,
+    type: "appartment"
+  },
+  {
+    image: Property5,
+    name: "Penthouse",
+    price: "$925.600",
+    address: "18 New Street Miami, OR 97219",
+    bedrooms: 8,
+    bathrooms: 8,
+    area: "545m2",
+    floor: 8,
+    parking: 8,
+    type: "Penthouse"
+  },
+  {
+    image: Property6,
+    name: "Modern Condo",
+    price: "$450.000",
+    address: "18 New Street Miami, OR 97219",
+    bedrooms: 8,
+    bathrooms: 8,
+    area: "545m2",
+    floor: 8,
+    parking: 8,
+    type: "Penthouse"
+  },
+];
+
+
+const Properties = ({ properties = propertiesArray , showTitle }) => {
   return (
-    <div className='Mk-Sixth'>
-        <div className='Mk-SixthTitle'>
-            <Title subTitle='Properties' Title='Best Appartment & Sea View' className="Mk-sixthTitleEdit"/>
+    <div className="Mk-Sixth">
+      {showTitle && (
+        <div className="Mk-SixthTitle">
+          <Title
+            subTitle="Properties"
+            Title="Best Appartment & Sea View"
+            className="Mk-sixthTitleEdit"
+          />
         </div>
-        <div className='Mk-Cards'>
-            <div className='Mk-SingleCard'>
-                <img style={{borderRadius : "8px"}} src={Property1} alt="" />
-                <div className='Mk-PriceWithName'>
-                    <div className='Mk-proName'>
-                        Luxury Villa
-                    </div>
-                    <div className='Mk-Price'>
-                        <b>$2.264.000</b>
-                    </div>
-                </div>
-                <b style={{fontSize : "20px" , marginBottom : "20px"}}>18 New Street Miami, OR 97219</b>
-                <div className='Mk-roomsInfo'>
-                    <p>Bedrooms: <b>8</b></p>
-                    <p>Bethrooms: <b>8</b></p>
-                    <p>Area: <b>545m2</b></p>
-                    <p>Floor: <b>8</b></p>
-                    <p>Parking: <b>8</b></p>
-                </div>
-                <div className='Mk-btnDiv'>
-                <button className='Mk-VisitBtn'>Schedule a visit</button>
-                </div>
-
-            </div>
-            <div className='Mk-SingleCard'>
-                <img style={{borderRadius : "8px"}} src={Property2} alt="" />
-                <div className='Mk-PriceWithName'>
-                    <div className='Mk-proName'>
-                        Luxury Villa
-                    </div>
-                    <div className='Mk-Price'>
-                        <b>$2.264.000</b>
-                    </div>
-                </div>
-                <b style={{fontSize : "20px" , marginBottom : "20px"}}>18 New Street Miami, OR 97219</b>
-                <div className='Mk-roomsInfo'>
-                    <p>Bedrooms: <b>8</b></p>
-                    <p>Bethrooms: <b>8</b></p>
-                    <p>Area: <b>545m2</b></p>
-                    <p>Floor: <b>8</b></p>
-                    <p>Parking: <b>8</b></p>
-                </div>
-                <div className='Mk-btnDiv'>
-                <button className='Mk-VisitBtn'>Schedule a visit</button>
-                </div>
-
-            </div>
-            <div className='Mk-SingleCard'>
-                <img style={{borderRadius : "8px"}} src={Property3} alt="" />
-                <div className='Mk-PriceWithName'>
-                    <div className='Mk-proName'>
-                        Luxury Villa
-                    </div>
-                    <div className='Mk-Price'>
-                        <b>$2.264.000</b>
-                    </div>
-                </div>
-                <b style={{fontSize : "20px" , marginBottom : "20px"}}>18 New Street Miami, OR 97219</b>
-                <div className='Mk-roomsInfo'>
-                    <p>Bedrooms: <b>8</b></p>
-                    <p>Bethrooms: <b>8</b></p>
-                    <p>Area: <b>545m2</b></p>
-                    <p>Floor: <b>8</b></p>
-                    <p>Parking: <b>8</b></p>
-                </div>
-                <div className='Mk-btnDiv'>
-                <button className='Mk-VisitBtn'>Schedule a visit</button>
-                </div>
-
-            </div>
-            <div className='Mk-SingleCard'>
-                <img style={{borderRadius : "8px"}} src={Property4} alt="" />
-                <div className='Mk-PriceWithName'>
-                    <div className='Mk-proName'>
-                        Luxury Villa
-                    </div>
-                    <div className='Mk-Price'>
-                        <b>$2.264.000</b>
-                    </div>
-                </div>
-                <b style={{fontSize : "20px" , marginBottom : "20px"}}>18 New Street Miami, OR 97219</b>
-                <div className='Mk-roomsInfo'>
-                    <p>Bedrooms: <b>8</b></p>
-                    <p>Bethrooms: <b>8</b></p>
-                    <p>Area: <b>545m2</b></p>
-                    <p>Floor: <b>8</b></p>
-                    <p>Parking: <b>8</b></p>
-                </div>
-                <div className='Mk-btnDiv'>
-                <button className='Mk-VisitBtn'>Schedule a visit</button>
-                </div>
-
-            </div>
-            <div className='Mk-SingleCard'>
-                <img style={{borderRadius : "8px"}} src={Property5} alt="" />
-                <div className='Mk-PriceWithName'>
-                    <div className='Mk-proName'>
-                        Luxury Villa
-                    </div>
-                    <div className='Mk-Price'>
-                        <b>$2.264.000</b>
-                    </div>
-                </div>
-                <b style={{fontSize : "20px" , marginBottom : "20px"}}>18 New Street Miami, OR 97219</b>
-                <div className='Mk-roomsInfo'>
-                    <p>Bedrooms: <b>8</b></p>
-                    <p>Bethrooms: <b>8</b></p>
-                    <p>Area: <b>545m2</b></p>
-                    <p>Floor: <b>8</b></p>
-                    <p>Parking: <b>8</b></p>
-                </div>
-                <div className='Mk-btnDiv'>
-                <button className='Mk-VisitBtn'>Schedule a visit</button>
-                </div>
-
-            </div>
-            <div className='Mk-SingleCard'>
-                <img style={{borderRadius : "8px"}} src={Property6} alt="" />
-                <div className='Mk-PriceWithName'>
-                    <div className='Mk-proName'>
-                        Luxury Villa
-                    </div>
-                    <div className='Mk-Price'>
-                        <b>$2.264.000</b>
-                    </div>
-                </div>
-                <b style={{fontSize : "20px" , marginBottom : "20px"}}>18 New Street Miami, OR 97219</b>
-                <div className='Mk-roomsInfo'>
-                    <p>Bedrooms: <b>8</b></p>
-                    <p>Bethrooms: <b>8</b></p>
-                    <p>Area: <b>545m2</b></p>
-                    <p>Floor: <b>8</b></p>
-                    <p>Parking: <b>8</b></p>
-                </div>
-                <div className='Mk-btnDiv'>
-                <button className='Mk-VisitBtn'>Schedule a visit</button>
-                </div>
-
-            </div>
-        
-
-
-        </div>
-
+      )}
+       <div className="Mk-Cards">
+        {Array.isArray(properties) && properties.map((property, index) => (
+          <PropertyCard key={index} property={property} />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Properties
+
+export default Properties;

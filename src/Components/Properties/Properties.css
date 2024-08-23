@@ -31,7 +31,7 @@
 .Mk-SingleCard
 {
     background-color: rgb(236, 234, 234);
-    width: 350px;
+    width: 375PX;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
 }
 .Mk-proName
 {
-    width: 100px;
+    width: 120px;
     font-size: 15px;
     background-color: #fad7d4;
     color: black;
@@ -103,6 +103,7 @@
     .Mk-SingleCard
     {
         width: 250px;
+        padding: 15px;
     }
 
 }

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -17,10 +18,10 @@ const NavBar = () => {
     <nav className= 'MK-Container '>
           <h1 className='Mk-Villa'>VILLA</h1>
             <ul className={sideBar? '' :'side-bar' }>
-              <li><a className='Mk-navBtn'> Home</a></li>
-              <li> <a className='Mk-navBtn'>Properties </a></li>
-              <li> <a className='Mk-navBtn' >Property Details</a></li>
-              <li> <a className='Mk-navBtn' >Contact Us</a></li>
+              <li><Link className='Mk-navBtn' to={'/'}> Home</Link></li>
+              <li> <Link className='Mk-navBtn' to={'/Properties'}>Properties </Link></li>
+              <li> <Link className='Mk-navBtn' to={'/PropertyDetails'}>Property Details</Link></li>
+              <li> <Link className='Mk-navBtn' to={'/Contact'}>Contact Us</Link></li>
               <li className='Mk-lastItem'>  
                 <button className="Mk-button">
                 <div className="Mk-icon-container">

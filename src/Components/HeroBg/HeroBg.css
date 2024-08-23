@@ -1,0 +1,41 @@
+.Mk-backImgPages
+{
+    position: relative;
+    width: 100%;
+    background-image: url(./../../../public/images/page-heading-bg.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.Mk-backImgPages p
+{
+    width: 250px;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+}
+.Mk-backImgPages h3
+{
+    font-size: 45px ;
+    color: white;
+    font-weight: 900;
+}
+
+@media  screen and (max-width:480px) {
+    .Mk-backImgPages p{
+        width: 190px;
+        font-size: 15px;
+    }
+    .Mk-backImgPages h3
+    {
+        font-size: 35px;
+    }
+} 
