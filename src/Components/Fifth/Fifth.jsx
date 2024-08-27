@@ -8,7 +8,7 @@ import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Fifth = () => {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState('appartment');
 
   const tabsData = {
     appartment:  (
@@ -224,19 +224,19 @@ const Fifth = () => {
         </div>
         <div className="Mk-ThreeBtns">
           <button
-            className="Mk-FifthBtns"
+            className={`Mk-FifthBtns ${activeTab === 'appartment' ? 'active' : ''}`}
             onClick={() => setActiveTab("appartment")}
           >
             Appartment
           </button>
           <button
-            className="Mk-FifthBtns"
+            className={`Mk-FifthBtns ${activeTab === 'villa' ? 'active' : ''}`}
             onClick={() => setActiveTab("villa")}
           >
             Villa House
           </button>
           <button
-            className="Mk-FifthBtns"
+            className={`Mk-FifthBtns ${activeTab === 'pethouse' ? 'active' : ''}`}
             onClick={() => setActiveTab("Pethouse")}
           >
             Pethouse

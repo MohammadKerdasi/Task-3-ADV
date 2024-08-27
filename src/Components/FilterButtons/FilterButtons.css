@@ -29,7 +29,9 @@
 {
     color: #f35525;
 }
-.Mk-filterBtn:focus:not(:hover)
-{
+.Mk-filterBtn.active {
     background-color: #f35525;
-}
+    color: white;
+
+  }
+  

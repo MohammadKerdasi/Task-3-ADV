@@ -118,14 +118,35 @@
   }
   
 
-  @media (max-width:850px)
+  @media (max-width:992px)
   {
+    .MK-slide
+    {
+      padding: 0 20% ;
+    }
+    .MK-slide h1 
+    {
+      font-size: 40px;
+    }
+  }
+  @media (max-width:678px)  {
     .MK-slide
     {
       padding: 0 40% ;
     }
     .MK-slide h1 
+
     {
-      font-size: 40px;
+      width: 200px;
+    }
+    
+  }
+  @media (max-width:480px)
+  {
+    .MK-slide h1 
+
+    {
+      width: 150px;
+      font-size: 33px;
     }
   }

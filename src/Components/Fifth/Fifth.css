@@ -38,10 +38,10 @@
 {
     background-color: #f33446;
 }
-.Mk-FifthBtns:focus
-{
+.Mk-FifthBtns.active {
     background-color: #f33446;
-}
+    color: white;
+  }
 .Mk-185boldAndspan
 {
     width: 100%;

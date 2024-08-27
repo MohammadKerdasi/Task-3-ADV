@@ -83,8 +83,8 @@ const propertiesArray = [
   },
 ];
 
-
 const Properties = ({ properties = propertiesArray , showTitle }) => {
+  
   return (
     <div className="Mk-Sixth">
       {showTitle && (
