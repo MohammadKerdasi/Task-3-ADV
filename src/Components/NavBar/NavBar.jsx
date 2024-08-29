@@ -1,41 +1,65 @@
-import './NavBar.css'
-import menu_icon from './../../../public/images/menu-icon.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import "./NavBar.css";
+import menu_icon from "./../../../public/images/menu-icon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 
-import { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
+  const [sideBar, setSideBar] = useState(false);
+  const [fixed, setFixed] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    };
 
-      const [sideBar, setSideBar] = useState(false)
-      const toggleMenu = () =>{
-            sideBar ? setSideBar(false) : setSideBar(true);
+    window.addEventListener("scroll", handleScroll);
 
-        }
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const toggleMenu = () => {
+    sideBar ? setSideBar(false) : setSideBar(true);
+  };
 
   return (
-    <nav className= 'MK-Container '>
-          <h1 className='Mk-Villa'>VILLA</h1>
-            <ul className={sideBar? '' :'side-bar' }>
-              <li><Link className='Mk-navBtn' to={'/'}> Home</Link></li>
-              <li> <Link className='Mk-navBtn' to={'/Properties'}>Properties </Link></li>
-              <li> <Link className='Mk-navBtn' to={'/PropertyDetails'}>Property Details</Link></li>
-              <li> <Link className='Mk-navBtn' to={'/Contact'}>Contact Us</Link></li>
-              <li className='Mk-lastItem'>  
-                <button className="Mk-button">
-                <div className="Mk-icon-container">
-                    <FontAwesomeIcon icon={faCalendarAlt} className="Mk-scheduleIcon" />
-                </div>
-                    <span className="button-text">Schedule a visit</span>
-                </button> 
-              </li>
-
-        </ul>
-        <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
+    <nav className={`MK-Container ${fixed ? 'nav-fixed' : ''}`}>
+      <h1 className="Mk-Villa">VILLA</h1>
+      <ul className={sideBar ? "" : "side-bar"}>
+        <li>
+          <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/">Home </NavLink>
+        </li>
+        <li>
+        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/Properties">Properties </NavLink>
+        </li>
+        <li>
+        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/PropertyDetails">Property Details </NavLink>
+        </li>
+        <li>
+        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/Contact">Contact Us </NavLink>
+        </li>
+        <li className="Mk-lastItem">
+          <button className="Mk-button">
+            <div className="Mk-icon-container">
+              <FontAwesomeIcon
+                icon={faCalendarAlt}
+                className="Mk-scheduleIcon"
+              />
+            </div>
+            <span className="button-text">Schedule a visit</span>
+          </button>
+        </li>
+      </ul>
+      <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
-
+export default NavBar;

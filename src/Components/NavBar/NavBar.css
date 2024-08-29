@@ -7,32 +7,54 @@ nav{
     align-items: baseline;
     justify-content: space-between;
     z-index: 10;
+    background-color: white;
+    transition: 5s all ease;
 }
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    box-shadow: 0  4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+  }
 nav ul li 
 {
     display: inline-block;
     list-style: none;
     padding: 10px 30px;
-
     font-size: 18px;
+    color: #212121;
 }
-nav ul li:not(:last-child) :hover
+nav ul li a 
+{
+    color: #212121;
+}
+nav ul li a.active
+{
+    color: #f44336;
+}
+nav ul li a:hover
 {
     color: #f44336;
 }
 .Mk-lastItem
 {
     padding: 10px 0 10px 20px !important;
+    cursor: pointer;
 }
 .menu-icon
 {
     display: none;
     color: #f44336;
 }
+
 .MK-Container
 {
-    transition: 0.3s ease;
     padding: 20px 10%;
+    top: 0;
+    opacity: 1;
 }
 .Mk-navBtn
 {

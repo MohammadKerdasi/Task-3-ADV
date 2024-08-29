@@ -45,6 +45,7 @@
     border-radius: 50%;
     list-style: none ;
     text-decoration: none;
+    transition: .5s all ease;
 }
 .Mk-Info .Mk-borderRight::after 
 {
@@ -54,6 +55,10 @@
     width: 1px;
     height: 25px;
     background-color: #f1e9f0;
+}
+.Mk-ul li:hover 
+{
+    transform:rotate(360deg);
 }
 
 @media (min-width:525px) and (max-width:800px){

@@ -6,9 +6,6 @@
   }
   
   .MK-background {
-    background: url(./../../../public/images/banner-01.jpg);
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -28,25 +25,34 @@
     font-family: Arial, sans-serif;
     font-weight: bold;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
   }
   
   .MK-carousel-track {
     display: flex;
     transition: transform 0.5s ease;
   }
+  /* .MK-location .Mk-Country img 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  } */
   
   .MK-slide {
     padding: 0 10%;
     min-width: 100%;
     transition: all 0.5s ease-in-out;
-    opacity: 1;
   }
   .MK-slide h1 
   {
     font-size: 45px;
     line-height: 1.2;
     font-weight: 800;
-    width: 20%;
+    width: 30%;
   }
   
   .MK-location {
@@ -69,16 +75,21 @@
     border: none;
     cursor: pointer;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .MK-prev {
     left: 10px;
+    height: 50px;
     width: 50px;
     border-radius: 50%;
   }
   
   .MK-next {
     right: 10px;
+    height: 50px;
     width: 50px;
     border-radius: 50%;
   }
@@ -114,6 +125,7 @@
   }
   .Mk-cityColor
   {
+    display: inline-flex;
     color: #f44336;
   }
   
@@ -127,12 +139,13 @@
     .MK-slide h1 
     {
       font-size: 40px;
+      width: 50%;
     }
   }
   @media (max-width:678px)  {
     .MK-slide
     {
-      padding: 0 40% ;
+      padding: 0 30% ;
     }
     .MK-slide h1 
 
@@ -148,5 +161,11 @@
     {
       width: 150px;
       font-size: 33px;
+    }
+    .MK-prev , .MK-next
+    {
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
     }
   }
