@@ -11,7 +11,7 @@ const NavBar = () => {
   const [fixed, setFixed] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setFixed(true);
       } else {
         setFixed(false);
@@ -33,6 +33,9 @@ const NavBar = () => {
     <nav className={`MK-Container ${fixed ? 'nav-fixed' : ''}`}>
       <h1 className="Mk-Villa">VILLA</h1>
       <ul className={sideBar ? "" : "side-bar"}>
+        <li>
+        <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
+        </li>
         <li>
           <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/">Home </NavLink>
         </li>
