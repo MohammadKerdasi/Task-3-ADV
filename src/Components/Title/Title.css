@@ -22,17 +22,25 @@
 }
 .Title h2 
 {
-    width: 350px;
+    width: 100%;
     font-size: 45px;
     color: black;
     margin-top: 5px;
     text-transform: none;
 }
+@media (max-width:992px){
+    .Title h2
+    {
+        width: 200px;
+        font-size: 36px !important;
+    }
 
+
+}
 @media (max-width:500px){
     .Title h2 {
         width: 100%;
-        font-size: 25px;
+        font-size: 30px;
 
     }
 }

@@ -77,7 +77,6 @@
     .Mk-250{
         width: 250px;
         padding: 15px;
-        margin-top: 20px;
     }
     .Mk-flatSpace
     {
@@ -104,11 +103,11 @@
     .Mk-flatSpace
     {
         width: 100%;
-        padding: 20px 40px;
+        padding: 20px 10px;
 
     }
     .Mk-flatSpace:last-child
     {
-        padding: 20px 40px;
+        padding: 20px 10px;
     }
 }

@@ -25,7 +25,7 @@
 {
     position: relative;
     display: flex;
-    width: 350px;
+    width: 30%;
     height: 450px;
     background: url(./../../../public/images/featured.jpg);
     background-position: center;
@@ -36,7 +36,7 @@
 .Mk-appartmentTitle
 {
     position: relative;
-    width: 500px;
+    width: 30%;
     margin: 0px 20px 0px 20px;
 }
 .Mk-250
@@ -87,31 +87,41 @@
     font-size: 18px;
     color: rgb(179, 179, 179);
 }
-@media (min-width:700px) and (max-width:1150px){
-    .Mk-appartmentSection
+@media (min-width:768px) and (max-width:992px){
+     .Mk-appartmentSection
     {
-        flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .Mk-appartmentTitle
-    {
-        width: 400px;
-    }
-}
-@media (min-width:300px) and (max-width:700px)
-{
-    .Mk-appartmentSection
-    {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        flex-wrap: wrap;
+        gap: 40px;
+    } 
     .Mk-appartmentTitle
     {
         width: 250px;
+    }
+    .Mk-firstFeatured
+    {
+        width: 250px;
+    }
+}
+@media (min-width:300px) and (max-width:768px)
+{
+    .Mk-firstFeatured
+    {
+        width: 100% !important;
+    }
+    .Mk-appartmentSection
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .Mk-appartmentTitle
+    {
+        width: 100%;
+        margin: 0;
     }
     .Mk-firstFeatured
     {
