@@ -92,7 +92,7 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .Mk-KeepInTouch {
     flex-direction: column;
   }
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 481px) {
+@media (max-width: 481px) {
   .Mk-PhoneAndMail {
     width: 100%;
     padding: 25px 20px;
@@ -135,5 +135,13 @@
   .Mk-PhoneText2 p
 {
     font-size: 15px;
+}
+.MK-form2 button
+{
+  width: 180px;
+}
+.MK-form2
+{
+  padding: 10px 20px 0px 0px;
 }
 }
